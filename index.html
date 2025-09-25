@@ -1,0 +1,122 @@
+<!doctype html>
+<html ⚡>
+<head>
+    <meta charset="utf-8">
+    <title>amp-ad - Example 1</title>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js" async></script>
+    <link rel="canonical" href="https://preview.amp.dev/documentation/components/amp-ad.example.1.html">
+    <meta name="viewport" content="width=device-width">
+    <script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script>
+    <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+    <script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
+    <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+    <style amp-custom>
+        /***** Dynamic AMP Ad Styling *****/
+        .adk-adv-amp-list:not(#adk_pushdown-amp) *:not(div):not(img):not(amp-img):not(amp-ad):not(amp-iframe):not(amp-sticky-ad-top-padding) {
+        position: absolute;
+        }
+
+        .adk-adv-amp-list,
+        .adk-adv-amp-list div[role=list] {
+        position: relative;
+        height: auto;
+        min-height: 0.5px;
+        }
+
+        #adk_footer-amp {
+        max-height: 0.5px;
+        overflow: hidden;
+        }
+        #adk_footer-amp.adk-adv-amp-list,
+        #adk_footer-amp.adk-adv-amp-list div[role=list] {
+        position: relative;
+        height: auto;
+        margin-top: 0;
+        }
+
+        .adk-adv-amp-list :first-child {
+        height: auto;
+        }
+
+        #adk_pushdown-amp {
+        width: 100%;
+        }
+        #adk_pushdown-amp ~ .amp-wp-logo {
+        margin-top: -375px;
+        }
+
+        /***** Custom Styling for AMP Ads *****/
+        .adk-box-amp,
+        .adk-adv-amp-list div[role=listitem] {
+        text-align: center;
+        }
+        .hidden {
+        display: none;
+        }
+    </style>
+    <!-- <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript> -->
+</head>
+<body>
+    <!-- HEADER AMP TAG -->
+    <amp-list id="adk_header-amp"
+        class="adk-adv-amp-list"
+        src="https://cdn.adkaora.space/test-value-network/generic/prod/amp-ad/adk-header-amp-setup.json"
+        layout="responsive"
+        height="1"
+        width="1">
+        <template type="amp-mustache">
+            <div id="{{id}}" class="{{class}}">
+            <amp-sticky-ad layout="nodisplay">
+                <amp-ad width="{{primary-width}}"
+                height="{{primary-height}}"
+                type="{{ad-server-type}}"
+                layout="{{layout}}"
+                sticky="{{sticky}}"
+                data-slot="{{path}}"
+                data-multi-size="{{size}}"
+                data-multi-size-validation="{{size-validation}}"
+                data-loading-strategy="{{loading-strategy}}"
+                data-enable-refresh="{{refresh}}"
+                data-block-on-consent="{{block-on-consent}}">
+                </amp-ad>
+            </amp-sticky-ad>
+            </div>
+        </template>
+    </amp-list>
+<!-- END OF HEADER AMP TAG -->
+
+    <h1>Welcome to the Sample Page</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus laoreet tincidunt nisi. Sed cursus vulputate arcu, in sodales nibh cursus eget. Donec rhoncus vulputate pellentesque. Vivamus viverra diam in dui vehicula, ut porttitor mi volutpat. Pellentesque sit amet purus tellus. Nunc ut magna commodo, gravida lacus at, molestie ex. Cras pretium malesuada lorem nec tempor. Morbi arcu diam, dictum porta eleifend ac, porttitor ut odio. Nulla in eros sollicitudin, gravida velit in, bibendum tortor. Suspendisse placerat ultrices volutpat. Pellentesque at diam malesuada, vestibulum est et, convallis nisi. Duis id metus mi. Duis maximus, massa blandit bibendum finibus, arcu arcu rutrum sem, eu auctor tortor sem eget tellus. Nunc suscipit sodales nisi nec posuere. Maecenas mattis elit in arcu venenatis, et porttitor lacus tristique.
+
+        Aliquam placerat auctor facilisis. Etiam id mi felis. Morbi semper et magna nec sodales. Praesent tristique, lacus et ornare lacinia, nisi sapien semper ipsum, vitae rutrum odio nibh a ipsum. Sed eget laoreet mi, at sollicitudin purus. Donec sed mauris arcu. Integer condimentum odio quis mattis tempor. Nam nec tristique ligula, et sagittis erat. Sed sagittis gravida sem efficitur pretium. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+
+        Quisque ultrices lacus lorem, sit amet luctus ipsum rhoncus et. Sed facilisis arcu sit amet quam fringilla posuere. Duis lobortis rutrum sapien aliquam pulvinar. Nullam tristique vel leo sit amet pellentesque. Phasellus vestibulum quam eu turpis ultricies eleifend. Nullam lacinia, libero sit amet varius vulputate, tellus urna bibendum purus, quis euismod mi arcu nec metus. Sed mollis nulla vitae porta tristique. Vestibulum at placerat augue. Proin dictum efficitur eros, sit amet venenatis leo sollicitudin rutrum. Morbi fermentum volutpat consequat. Fusce pharetra sapien sed dui luctus egestas. Phasellus nec ullamcorper ipsum. Ut gravida nunc est, ut iaculis nibh condimentum nec. Aenean aliquam libero est, vel tempor justo congue in.
+
+        Donec eleifend quis leo nec hendrerit. Aenean elit nulla, auctor placerat enim aliquam, vulputate varius ex. Maecenas blandit semper elit, a tincidunt mauris egestas quis. Integer nec rutrum risus. Integer id nunc nec risus convallis malesuada eget a quam. Aenean vel erat nulla. Proin posuere orci eget leo lobortis pharetra. Maecenas orci risus, vestibulum a porta in, iaculis sed urna.
+
+        Nunc ullamcorper arcu consequat, vestibulum massa nec, ullamcorper magna. Suspendisse gravida a leo non rutrum. Cras nec mauris eu tellus scelerisque mollis id in mauris. Proin porttitor interdum hendrerit. Aliquam nibh arcu, consequat vel ligula et, aliquam porta velit. Fusce rutrum nisl odio, at eleifend nibh consequat vitae. Donec fringilla elit ut volutpat semper. Donec sollicitudin lorem nibh, id aliquam ex faucibus eu. Nunc tincidunt mauris ac cursus tristique.</p>
+    <img src="https://amp.dev/static/samples/img/amp.jpg" alt="AMP Example Image" width="600" height="400">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus laoreet tincidunt nisi. Sed cursus vulputate arcu, in sodales nibh cursus eget. Donec rhoncus vulputate pellentesque. Vivamus viverra diam in dui vehicula, ut porttitor mi volutpat. Pellentesque sit amet purus tellus. Nunc ut magna commodo, gravida lacus at, molestie ex. Cras pretium malesuada lorem nec tempor. Morbi arcu diam, dictum porta eleifend ac, porttitor ut odio. Nulla in eros sollicitudin, gravida velit in, bibendum tortor. Suspendisse placerat ultrices volutpat. Pellentesque at diam malesuada, vestibulum est et, convallis nisi. Duis id metus mi. Duis maximus, massa blandit bibendum finibus, arcu arcu rutrum sem, eu auctor tortor sem eget tellus. Nunc suscipit sodales nisi nec posuere. Maecenas mattis elit in arcu venenatis, et porttitor lacus tristique.
+
+        Aliquam placerat auctor facilisis. Etiam id mi felis. Morbi semper et magna nec sodales. Praesent tristique, lacus et ornare lacinia, nisi sapien semper ipsum, vitae rutrum odio nibh a ipsum. Sed eget laoreet mi, at sollicitudin purus. Donec sed mauris arcu. Integer condimentum odio quis mattis tempor. Nam nec tristique ligula, et sagittis erat. Sed sagittis gravida sem efficitur pretium. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+
+        Quisque ultrices lacus lorem, sit amet luctus ipsum rhoncus et. Sed facilisis arcu sit amet quam fringilla posuere. Duis lobortis rutrum sapien aliquam pulvinar. Nullam tristique vel leo sit amet pellentesque. Phasellus vestibulum quam eu turpis ultricies eleifend. Nullam lacinia, libero sit amet varius vulputate, tellus urna bibendum purus, quis euismod mi arcu nec metus. Sed mollis nulla vitae porta tristique. Vestibulum at placerat augue. Proin dictum efficitur eros, sit amet venenatis leo sollicitudin rutrum. Morbi fermentum volutpat consequat. Fusce pharetra sapien sed dui luctus egestas. Phasellus nec ullamcorper ipsum. Ut gravida nunc est, ut iaculis nibh condimentum nec. Aenean aliquam libero est, vel tempor justo congue in.
+
+        Donec eleifend quis leo nec hendrerit. Aenean elit nulla, auctor placerat enim aliquam, vulputate varius ex. Maecenas blandit semper elit, a tincidunt mauris egestas quis. Integer nec rutrum risus. Integer id nunc nec risus convallis malesuada eget a quam. Aenean vel erat nulla. Proin posuere orci eget leo lobortis pharetra. Maecenas orci risus, vestibulum a porta in, iaculis sed urna.
+
+        Nunc ullamcorper arcu consequat, vestibulum massa nec, ullamcorper magna. Suspendisse gravida a leo non rutrum. Cras nec mauris eu tellus scelerisque mollis id in mauris. Proin porttitor interdum hendrerit. Aliquam nibh arcu, consequat vel ligula et, aliquam porta velit. Fusce rutrum nisl odio, at eleifend nibh consequat vitae. Donec fringilla elit ut volutpat semper. Donec sollicitudin lorem nibh, id aliquam ex faucibus eu. Nunc tincidunt mauris ac cursus tristique.</p>
+    <img src="https://amp.dev/static/samples/img/amp.jpg" alt="AMP Example Image" width="600" height="400">
+    <!-- <amp-ad
+        width="300"
+        height="250"
+        type="industrybrains"
+        sticky="top"
+        data-width="300"
+        data-height="250"
+        data-cid="19626-3798936394"
+    >
+    </amp-ad> -->
+</body>
+</html>
