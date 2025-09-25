@@ -59,7 +59,7 @@
 </head>
 <body>
     <!-- HEADER AMP TAG -->
-    <amp-list id="adk_header-amp"
+    <!-- <amp-list id="adk_header-amp"
         class="adk-adv-amp-list"
         src="https://cdn.adkaora.space/test-value-network/generic/prod/amp-ad/adk-header-amp-setup.json"
         layout="responsive"
@@ -82,8 +82,35 @@
             </amp-sticky-ad>
             </div>
         </template>
-    </amp-list>
+    </amp-list> -->
 <!-- END OF HEADER AMP TAG -->
+
+<!-- FOOTER AMP TAG -->
+    <amp-list id="adk_footer-amp"
+    class="adk-adv-amp-list"
+    src="https://cdn.adkaora.space/publisherRepoName/generic/prod/amp-ad/adk-footer-amp-setup.json"
+    layout="responsive"
+    height="1"
+    width="1">
+    <template type="amp-mustache">
+        <div id="{{id}}" class="{{class}}">
+        <amp-sticky-ad layout="nodisplay">
+            <amp-ad width="{{primary-width}}"
+            height="{{primary-height}}"
+            type="{{ad-server-type}}"
+            layout="{{layout}}"
+            data-slot="{{path}}"
+            data-multi-size="{{size}}"
+            data-multi-size-validation="{{size-validation}}"
+            data-loading-strategy="{{loading-strategy}}"
+            data-enable-refresh="{{refresh}}"
+            data-block-on-consent="{{block-on-consent}}">
+            </amp-ad>
+        </amp-sticky-ad>
+        </div>
+    </template>
+    </amp-list>
+<!-- END OF FOOTER AMP TAG -->
 
     <h1>Welcome to the Sample Page</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus laoreet tincidunt nisi. Sed cursus vulputate arcu, in sodales nibh cursus eget. Donec rhoncus vulputate pellentesque. Vivamus viverra diam in dui vehicula, ut porttitor mi volutpat. Pellentesque sit amet purus tellus. Nunc ut magna commodo, gravida lacus at, molestie ex. Cras pretium malesuada lorem nec tempor. Morbi arcu diam, dictum porta eleifend ac, porttitor ut odio. Nulla in eros sollicitudin, gravida velit in, bibendum tortor. Suspendisse placerat ultrices volutpat. Pellentesque at diam malesuada, vestibulum est et, convallis nisi. Duis id metus mi. Duis maximus, massa blandit bibendum finibus, arcu arcu rutrum sem, eu auctor tortor sem eget tellus. Nunc suscipit sodales nisi nec posuere. Maecenas mattis elit in arcu venenatis, et porttitor lacus tristique.
